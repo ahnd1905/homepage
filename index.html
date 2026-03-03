@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dong-Hyun | Personal Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <a href="index.html#about">About</a>
+        <a href="cv.html">CV</a>
+        <a href="research.html">Research</a>
+      </nav>
+
+      <div class="hero-content container" id="about">
+        <img class="profile-image" src="assets/profile.jpg" alt="SeongDeok profile photo" onerror="this.onerror=null;this.src='assets/profile-placeholder.svg';" />
+        <div>
+          <p class="greeting">Hello,</p>
+          <h1>I am Dong-Hyun Ahn.</h1>
+          <p class="intro">
+          
+          </p>
+          <div class="cta-links">
+            <a class="button" href="cv.html">View CV Page</a>
+            <a class="button button-secondary" href="research.html">View Research Page</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h2>Welcome</h2>
+        <p>
+          This homepage now has dedicated pages for CV and Research so that each section can be maintained separately.
+          Use the navigation at the top to move between pages.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> SeongDeok. All rights reserved.</p>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
